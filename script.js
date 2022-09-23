@@ -1,8 +1,6 @@
 // <!-- fazer uma tela, com formulario, onde terá um nome e um telefone usando html e js para salvar no localStorege -->
-// <!-- fazer uma tela, com formulario, onde terá um nome e um telefone usando html, css e js salvando no localStorege -->
 let pessoa = [];
 function enviar() {
-function enviar(){
     var nom = document.getElementById('nome').value;
     var num = document.getElementById('cell').value;
 
@@ -22,7 +20,6 @@ function enviar(){
     console.log(pessoaObj.nom);
     console.log(pessoaObj.nom.value); 
     console.log(pessoa)
-}
 }
 
 
