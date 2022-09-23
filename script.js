@@ -9,13 +9,18 @@ function enviar() {
     document.getElementById('cell').value=''; // Limpa o campo
 
     pessoa.push({ 'nome': nom, 'numero': num })
+    pessoa.push({ 'nome': nom, 'numero': num})
 
     localStorage.setItem('pessoa', JSON.stringify(pessoa));
     let pessoaString = localStorage.getItem('pessoa');
     let pessoaObj = JSON.parse(pessoaString);
 
-    
+
     //.value estava bunado o codigo. sua remoção fez com que o bug fosse resolvido
     console.log(pessoaObj.nom);
+    console.log(pessoaObj.nom.value); 
     console.log(pessoa)
 }
+
+
+
